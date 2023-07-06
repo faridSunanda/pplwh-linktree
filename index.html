@@ -14,8 +14,114 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
     <title>Link Tree</title>
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00DBDE;
+    background-image: linear-gradient(to bottom, #FF2171 60%, #FC00FF 100%);
+    background-size: cover;
+    border: 1px solid #000;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profils {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+
+.profils .logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background-image: url(img/icon.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.profils .link {
+    border: 2px solid aliceblue;
+    padding: 10px;
+    margin: 40px auto;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.profils .link:hover {
+    background-color: aliceblue;
+    color: #16FF00;
+    border: 2px solid #16FF00;
+}
+
+.profils .link i {
+    font-size: 2.2rem;
+}
+
+.profils .icon {
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profils .icon i {
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.profils .icon i:hover {
+    transform: rotate(360deg);
+}
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 10px 0;
+}
+footer a{
+    font-weight: bold;
+    color: blue;
+}
+
+@media screen and (min-width: 600px) {
+    .profils {
+        width: 60%;
+    }
+}
+    </style>
 </head>
 
 <body>
